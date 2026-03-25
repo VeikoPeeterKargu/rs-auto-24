@@ -677,6 +677,19 @@ ul {
   display: block;
 }
 
+.contact-map-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.2s ease, transform 0.3s ease;
+}
+
+.contact-map a:hover .contact-map-img {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
 /* --- Footer --- */
 .footer {
   background: var(--bg-secondary);
