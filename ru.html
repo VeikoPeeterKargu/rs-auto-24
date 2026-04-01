@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS Auto 24 – Автосервис и Ремонт | Иру, Таллин</title>
+  <meta name="description" content="RS Auto 24 – профессиональное обслуживание автомобилей, ремонт и шиномонтаж в Иру, недалеко от Таллина. Ремонтные работы от 30€/ч. Шиномонтаж от 30€. Звоните 5638 0701!">
+  <meta name="keywords" content="ремонт автомобилей, автосервис, шиномонтаж, Иру, Таллин, RS Auto 24, чтение кодов ошибок, замена аккумулятора, техосмотр">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rsauto24.ee">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RS Auto 24 – Автосервис и Ремонт">
+  <meta property="og:description" content="Профессиональное обслуживание автомобилей, ремонт и шиномонтаж в Иру. Звоните 5638 0701!">
+  <meta property="og:image" content="assets/logo.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "RS Auto 24",
+    "description": "Обслуживание автомобилей, ремонт и шиномонтаж в Иру, недалеко от Таллина.",
+    "image": "assets/logo.jpg",
+    "telephone": "+3725638 0701",
+    "email": "rsauto244@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Saha-Loo tee 1a",
+      "addressLocality": "Iru",
+      "addressCountry": "EE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 59.453944,
+      "longitude": 24.920611
+    },
+    "url": "https://rsauto24.ee",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100089255232353"
+    ],
+    "priceRange": "€€",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="header-logo-link" id="headerLogoLink">
+        <canvas id="headerLogoCanvas" class="header-logo-canvas" aria-label="RS Auto 24 logo"></canvas>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#teenused">Услуги</a>
+        <a href="#rehvivahetus">Шиномонтаж</a>
+        <a href="#galerii">Галерея</a>
+        <a href="#kontakt">Контакты</a>
+        <div class="lang-switch">
+          <a href="index.html">ET</a>
+          <a href="ru.html" class="active">RU</a>
+          <a href="en.html">EN</a>
+        </div>
+        <a href="tel:+37256380701" class="nav-cta">📞 Позвонить</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <!-- Floating 3D particles -->
+    <div class="hero-particles" id="heroParticles"></div>
+    <!-- Animated glow ring -->
+    <div class="hero-glow-ring"></div>
+    <div class="hero-content">
+      <canvas id="heroLogoCanvas" class="hero-logo-canvas" aria-label="RS Auto 24"></canvas>
+      <p class="hero-tagline">Автосервис · Ремонт · Шиномонтаж</p>
+      <p class="hero-subtitle">Надежный автосервис в Иру, недалеко от Таллина. Выполняем все работы честно и быстро – от легковых до грузовых автомобилей.</p>
+      <div class="hero-actions">
+        <a href="tel:+37256380701" class="btn btn-primary">📞 Звоните сейчас: 5638 0701</a>
+        <a href="#teenused" class="btn btn-secondary">Посмотреть услуги ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEENUSED (Services) ============ -->
+  <section class="section section-alt" id="teenused">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Что мы делаем</span>
+        <h2 class="section-title">Услуги</h2>
+        <p class="section-desc">Широкий спектр услуг по обслуживанию и ремонту автомобилей – быстро, честно и по хорошей цене.</p>
+      </div>
+
+      <div class="services-grid stagger-children">
+        <div class="service-card fade-in">
+          <span class="service-icon">🔧</span>
+          <h3>Обслуживание и ремонт</h3>
+          <p>Повседневное обслуживание, замена тормозов, масла, ремонт коробки передач и многое другое.</p>
+          <span class="service-badge">30 €/ч</span>
+        </div>
+
+        <div class="service-card fade-in">
+          <span class="service-icon">🛞</span>
+          <h3>Шиномонтаж</h3>
+          <p>Быстрый и профессиональный шиномонтаж. Все размеры 13"–22". Цены от 30 €.</p>
+          <span class="service-badge">От 30 €</span>
+        </div>
+
+        <div class="service-card fade-in">
+          <span class="service-icon">🔋</span>
+          <h3>Замена аккумулятора</h3>
+          <p>Проверка и при необходимости замена аккумулятора. Помощь даже холодным зимним утром!</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <span class="service-icon">🔩</span>
+          <h3>Проверка ходовой части</h3>
+          <p>Проверяем ходовую часть, шаровые опоры, амортизаторы и детали рулевого управления – поездка останется безопасной и комфортной.</p>
+        </div>
+        <div class="service-card fade-in">
+          <span class="service-icon">📋</span>
+          <h3>Подготовка к техосмотру</h3>
+          <p>Проверяем автомобиль и чиним все необходимое, чтобы технический осмотр прошел успешно.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <span class="service-icon">🚗</span>
+          <h3>Прохождение техосмотра</h3>
+          <p>Сами отвозим ваш автомобиль на техосмотр и привозим обратно – вам не о чем беспокоиться.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <span class="service-icon">⚡</span>
+          <h3>Чтение кодов ошибок</h3>
+          <p>Считываем коды ошибок с помощью диагностического оборудования. <strong>Бесплатно</strong>, если устраняете проблему у нас!</p>
+          <span class="service-badge">Бесплатно*</span>
+        </div>
+
+        <div class="service-card fade-in">
+          <span class="service-icon">🔧</span>
+          <h3>Новые запчасти</h3>
+          <p>Поставляем качественные запчасти – быстро, по разумной цене и с установкой.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <span class="service-icon">🏁</span>
+          <h3>Новые шины</h3>
+          <p>Продаем и устанавливаем новые шины – летние, зимние, шипованные и фрикционные.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REHVIVAHETUS (Tire Change Pricing) ============ -->
+  <section class="section" id="rehvivahetus">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Сезонное предложение</span>
+        <h2 class="section-title">Шиномонтаж</h2>
+        <p class="section-desc">Меняем шины быстро и аккуратно. Цена зависит от размера диска.</p>
+      </div>
+
+      <div class="pricing-section">
+        <div class="pricing-image fade-in">
+          <img src="assets/tire-prices.jpg" alt="RS Auto 24 цены на шиномонтаж" loading="lazy">
+          <!-- 3D rotating tire overlay -->
+          <canvas id="tireCanvas" class="tire-canvas"></canvas>
+        </div>
+
+        <div class="pricing-content fade-in">
+          <h3>Цены на шиномонтаж</h3>
+          <p>Замена 4 шин – цена зависит от диска:</p>
+
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Размер диска</th>
+                <th>Цена (4 шины)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>13–14"</td>
+                <td class="price">30 €</td>
+              </tr>
+              <tr>
+                <td>15–16"</td>
+                <td class="price">40 €</td>
+              </tr>
+              <tr>
+                <td>17–18"</td>
+                <td class="price">50 €</td>
+              </tr>
+              <tr>
+                <td>19–20"</td>
+                <td class="price">60 €</td>
+              </tr>
+              <tr>
+                <td>21–22"</td>
+                <td class="price">65 €</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="pricing-extra">
+            <div class="pricing-note">
+              <span class="note-icon">🔧</span>
+              <div><strong>Ремонтные работы:</strong> 30 €/ч</div>
+            </div>
+            <div class="pricing-note highlight">
+              <span class="note-icon">⚡</span>
+              <div><strong>Чтение кодов ошибок бесплатно</strong>, если устраняете ошибку у нас. Иначе 15 €.</div>
+            </div>
+            <div class="pricing-note">
+              <span class="note-icon">🚙</span>
+              <div><strong>Внедорожник / Фургон:</strong> +10 € (4 шины)</div>
+            </div>
+            <div class="pricing-note">
+              <span class="note-icon">🏎️</span>
+              <div><strong>Шины Run flat:</strong> +10 € (4 шины)</div>
+            </div>
+            <div class="pricing-note">
+              <span class="note-icon">🚗</span>
+              <div><strong>Забор автомобиля</strong> – при необходимости заберем автомобиль и привезем обратно.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERII (Gallery) ============ -->
+  <section class="section section-alt" id="galerii">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Наша работа</span>
+        <h2 class="section-title">Галерея</h2>
+        <p class="section-desc">Взгляд на нашу мастерскую и выполненные работы.</p>
+      </div>
+
+      <div class="gallery-grid stagger-children">
+        <div class="gallery-item fade-in">
+          <img src="assets/gallery-1.jpg" alt="RS Auto 24 мастерская" loading="lazy">
+          <span class="gallery-caption">Просторная мастерская с несколькими подъемниками</span>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="assets/gallery-2.jpg" alt="Ремонт двигателя" loading="lazy">
+          <span class="gallery-caption">Капитальный ремонт двигателя</span>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="assets/gallery-3.jpg" alt="Большой автомобиль на подъемнике" loading="lazy">
+          <span class="gallery-caption">Помещаются даже крупные автомобили</span>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="assets/gallery-4.jpg" alt="Toyota Land Cruiser в мастерской" loading="lazy">
+          <span class="gallery-caption">Toyota Land Cruiser на обслуживании</span>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="assets/gallery-5.jpg" alt="Ремонт пожарной машины" loading="lazy">
+          <span class="gallery-caption">Обслуживание пожарной машины</span>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="assets/gallery-6.jpg" alt="Замена тормозов" loading="lazy">
+          <span class="gallery-caption">Обслуживание и замена тормозов</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT (Contact) ============ -->
+  <section class="section" id="kontakt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Свяжитесь с нами</span>
+        <h2 class="section-title">Контакты</h2>
+        <p class="section-desc">Звоните, пишите или приезжайте – всегда рады помочь!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Телефон</h4>
+              <a href="tel:+37256380701">5638 0701</a>
+              <p class="contact-direction">Звоните или пишите – договоримся о времени!</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Эл. почта</h4>
+              <a href="mailto:rsauto244@gmail.com">rsauto244@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Расположение</h4>
+              <p>Saha-Loo tee 1a, Iru</p>
+              <p class="contact-direction">59°27'14.2"N 24°55'14.2"E</p>
+              <p class="contact-direction">Въезд со стороны Jaama tee, здание слева</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📘</div>
+            <div>
+              <h4>Facebook</h4>
+              <a href="https://www.facebook.com/profile.php?id=100089255232353" target="_blank" rel="noopener noreferrer">RSauto24</a>
+              <p class="contact-direction">Подписывайтесь на нас в Facebook!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map fade-in">
+          <a href="https://www.google.com/maps?q=59.453944,24.920611" target="_blank" rel="noopener" title="Открыть в Google Maps">
+            <img src="assets/kaart.png?v=3" alt="Расположение RS Auto 24 на карте – Saha-Loo tee, Iru" class="contact-map-img" />
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <canvas id="footerLogoCanvas" class="footer-logo-canvas" aria-label="RS Auto 24"></canvas>
+        <span class="footer-text">© 2024–2026 RS Auto 24. Все права защищены.</span>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+37256380701">📞 5638 0701</a>
+        <a href="mailto:rsauto244@gmail.com">✉️ Эл. почта</a>
+        <a href="https://www.facebook.com/profile.php?id=100089255232353" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
