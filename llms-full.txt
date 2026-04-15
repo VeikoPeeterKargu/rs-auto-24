@@ -1,0 +1,76 @@
+# RS Auto 24 — Full Business Profile
+
+> AI-optimized structured data for RS Auto 24 automotive workshop.
+
+## Company Identity
+
+- **Name:** RS Auto 24
+- **Industry:** Automotive repair and maintenance
+- **Type:** Small local business / workshop
+- **Founded:** 2024
+- **Location:** Saha-Loo tee 1a, Iru, Estonia
+- **GPS Coordinates:** 59.453944, 24.920611
+- **Languages Served:** Estonian, English, Russian
+- **Opening Hours:** Monday–Friday 09:00–18:00
+- **Price Range:** €€ (affordable)
+
+## Contact Information
+
+- **Phone:** +372 5638 0701 (also WhatsApp)
+- **Email:** rsauto244@gmail.com
+- **Facebook:** https://www.facebook.com/profile.php?id=100089255232353
+- **Website:** https://rsauto24.ee
+
+## Services and Pricing
+
+### Core Services
+
+| Service | Price | Details |
+|---------|-------|---------|
+| Auto maintenance & repair | 30 €/h | Daily maintenance, brake replacement, oil change, gearbox repair |
+| Tire change (4 tires) | 30–65 € | Depends on rim size: 13–14" = 30€, 15–16" = 40€, 17–18" = 50€, 19–20" = 60€, 21–22" = 65€ |
+| Battery replacement | By quote | Check and replacement, cold morning assistance |
+| Chassis inspection | By quote | Ball joints, shock absorbers, steering components |
+| Technical inspection prep | By quote | Full pre-inspection check and repairs |
+| Inspection trip | By quote | We take your car to inspection and bring it back |
+| Fault code reading | Free* | Free if repaired on-site, otherwise 15 € |
+| New spare parts | By quote | Quality parts with installation |
+| New tires | By quote | Summer, winter, studded and friction tires |
+
+### Surcharges
+
+- SUV / Van: +10 € (per 4 tire change)
+- Run flat tires: +10 € (per 4 tire change)
+
+### Additional Services
+
+- Car pickup and delivery available
+
+## Location & Directions
+
+RS Auto 24 is located in Iru, a suburb near Tallinn, Estonia. The workshop is at Saha-Loo tee 1a.
+
+**Directions:** Drive in from Jaama tee side, the building is on the left.
+
+**Google Maps:** https://www.google.com/maps?q=59.453944,24.920611
+
+## Vehicle Types Served
+
+- Passenger cars
+- Vans / Kaubikud
+- SUVs / Maasturid
+- Light commercial vehicles
+- Fire trucks (special vehicles)
+
+## Competitive Advantages
+
+1. **Affordable pricing** — 30 €/h for repair work, which is below Tallinn average
+2. **Multilingual** — Website and service in Estonian, Russian, and English
+3. **Full-service** — From tire change to engine overhaul
+4. **Free diagnostic** — Fault code reading free when repair is done on-site
+5. **Convenient** — Car pickup and delivery available
+6. **Quick turnaround** — Most services same-day
+
+## Schema.org Type
+
+AutoRepair (https://schema.org/AutoRepair)

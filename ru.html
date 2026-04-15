@@ -7,17 +7,59 @@
   <meta name="description" content="RS Auto 24 – профессиональное обслуживание автомобилей, ремонт и шиномонтаж в Иру, недалеко от Таллина. Ремонтные работы от 30€/ч. Шиномонтаж от 30€. Звоните 5638 0701!">
   <meta name="keywords" content="ремонт автомобилей, автосервис, шиномонтаж, Иру, Таллин, RS Auto 24, чтение кодов ошибок, замена аккумулятора, техосмотр">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://rsauto24.ee">
+  <link rel="canonical" href="https://rsauto24.ee/ru.html">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="et" href="https://rsauto24.ee/">
+  <link rel="alternate" hreflang="en" href="https://rsauto24.ee/en.html">
+  <link rel="alternate" hreflang="ru" href="https://rsauto24.ee/ru.html">
+  <link rel="alternate" hreflang="x-default" href="https://rsauto24.ee/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="RS Auto 24 – Автосервис и Ремонт">
-  <meta property="og:description" content="Профессиональное обслуживание автомобилей, ремонт и шиномонтаж в Иру. Звоните 5638 0701!">
-  <meta property="og:image" content="assets/logo.jpg">
+  <meta property="og:title" content="RS Auto 24 – Автосервис и Ремонт | Иру, Таллин">
+  <meta property="og:description" content="Профессиональное обслуживание автомобилей, ремонт и шиномонтаж в Иру, недалеко от Таллина. Звоните 5638 0701!">
+  <meta property="og:image" content="https://rsauto24.ee/assets/logo.jpg">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
+  <meta property="og:url" content="https://rsauto24.ee/ru.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="RS Auto 24">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="RS Auto 24 – Автосервис и Ремонт">
+  <meta name="twitter:description" content="Профессиональное обслуживание автомобилей в Иру. Звоните 5638 0701!">
+  <meta name="twitter:image" content="https://rsauto24.ee/assets/logo.jpg">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Consent Mode v2 (default denied) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+  </script>
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -56,6 +98,17 @@
 </head>
 <body>
 
+  <!-- ============ COOKIE BANNER ============ -->
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Согласие на файлы cookie" style="display:none;">
+    <div class="cookie-banner-inner">
+      <p>Этот сайт использует файлы cookie для улучшения пользовательского опыта и анализа трафика. <a href="privaatsuspoliitika.html">Политика конфиденциальности</a></p>
+      <div class="cookie-banner-actions">
+        <button id="cookieAccept" class="btn btn-primary btn-sm">✅ Принять</button>
+        <button id="cookieReject" class="btn btn-secondary btn-sm">❌ Отклонить</button>
+      </div>
+    </div>
+  </div>
+
   <!-- ============ HEADER ============ -->
   <header class="header" id="top">
     <div class="header-inner">
@@ -90,6 +143,7 @@
     <!-- Animated glow ring -->
     <div class="hero-glow-ring"></div>
     <div class="hero-content">
+      <h1 class="sr-only">RS Auto 24 – Автосервис и Ремонт в Иру</h1>
       <canvas id="heroLogoCanvas" class="hero-logo-canvas" aria-label="RS Auto 24"></canvas>
       <p class="hero-tagline">Автосервис · Ремонт · Шиномонтаж</p>
       <p class="hero-subtitle">Надежный автосервис в Иру, недалеко от Таллина. Выполняем все работы честно и быстро – от легковых до фургонов.</p>
@@ -354,10 +408,88 @@
         <a href="tel:+37256380701">📞 5638 0701</a>
         <a href="mailto:rsauto244@gmail.com">✉️ Эл. почта</a>
         <a href="https://www.facebook.com/profile.php?id=100089255232353" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
+        <a href="privaatsuspoliitika.html">🔒 Конфиденциальность</a>
+      </div>
+      <div class="footer-credit">
+        <span>Веб-решение: <a href="https://navik.ee/veeb/" target="_blank" rel="noopener">Navik OÜ</a></span>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Cookie Consent Logic + MS Clarity (consent-gated) + GA4 Events -->
+  <script>
+    (function() {
+      var banner = document.getElementById('cookieBanner');
+      var acceptBtn = document.getElementById('cookieAccept');
+      var rejectBtn = document.getElementById('cookieReject');
+      var consent = localStorage.getItem('cookieConsent');
+
+      if (!consent) {
+        banner.style.display = 'flex';
+      } else if (consent === 'accepted') {
+        activateTracking();
+      }
+
+      acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        banner.style.display = 'none';
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+        activateTracking();
+      });
+
+      rejectBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'rejected');
+        banner.style.display = 'none';
+      });
+
+      function activateTracking() {
+        if (!window._clarityLoaded) {
+          window._clarityLoaded = true;
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/CLARITY_ID";
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window,document,"clarity","script");
+        }
+      }
+
+      document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', { event_category: 'contact', method: 'phone_call', page_section: 'rs_auto_24' });
+          }
+        });
+      });
+
+      document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', { event_category: 'contact', method: 'email', page_section: 'rs_auto_24' });
+          }
+        });
+      });
+
+      var scrollMilestones = [25, 50, 75, 100];
+      var firedMilestones = {};
+      window.addEventListener('scroll', function() {
+        var scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+        scrollMilestones.forEach(function(milestone) {
+          if (scrollPercent >= milestone && !firedMilestones[milestone]) {
+            firedMilestones[milestone] = true;
+            if (typeof gtag === 'function') {
+              gtag('event', 'scroll', { event_category: 'engagement', percent_scrolled: milestone });
+            }
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

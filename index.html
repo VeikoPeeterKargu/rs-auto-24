@@ -7,17 +7,59 @@
   <meta name="description" content="RS Auto 24 – professionaalne autohooldus, remont ja rehvivahetus Irus, Tallinna lähedal. Remonditööd al. 30€/h. Rehvivahetus al. 30€. Helista 5638 0701!">
   <meta name="keywords" content="autoremont, autohooldus, rehvivahetus, Iru, Tallinn, RS Auto 24, veakoodide lugemine, aku vahetus, ülevaatus">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://rsauto24.ee">
+  <link rel="canonical" href="https://rsauto24.ee/">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="et" href="https://rsauto24.ee/">
+  <link rel="alternate" hreflang="en" href="https://rsauto24.ee/en.html">
+  <link rel="alternate" hreflang="ru" href="https://rsauto24.ee/ru.html">
+  <link rel="alternate" hreflang="x-default" href="https://rsauto24.ee/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="RS Auto 24 – Autohooldus & Remont">
-  <meta property="og:description" content="Professionaalne autohooldus, remont ja rehvivahetus Irus. Helista 5638 0701!">
-  <meta property="og:image" content="assets/logo.jpg">
+  <meta property="og:title" content="RS Auto 24 – Autohooldus & Remont | Iru, Tallinn">
+  <meta property="og:description" content="Professionaalne autohooldus, remont ja rehvivahetus Irus, Tallinna lähedal. Remonditööd al. 30€/h. Helista 5638 0701!">
+  <meta property="og:image" content="https://rsauto24.ee/assets/logo.jpg">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
+  <meta property="og:url" content="https://rsauto24.ee/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="et_EE">
+  <meta property="og:site_name" content="RS Auto 24">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="RS Auto 24 – Autohooldus & Remont">
+  <meta name="twitter:description" content="Professionaalne autohooldus, remont ja rehvivahetus Irus. Helista 5638 0701!">
+  <meta name="twitter:image" content="https://rsauto24.ee/assets/logo.jpg">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Consent Mode v2 (default denied) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+  </script>
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -56,6 +98,17 @@
 </head>
 <body>
 
+  <!-- ============ COOKIE BANNER ============ -->
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Küpsiste nõusolek" style="display:none;">
+    <div class="cookie-banner-inner">
+      <p>See veebileht kasutab küpsiseid, et pakkuda paremat kasutuskogemust ja analüüsida liiklust. <a href="privaatsuspoliitika.html">Privaatsuspoliitika</a></p>
+      <div class="cookie-banner-actions">
+        <button id="cookieAccept" class="btn btn-primary btn-sm">✅ Nõustun</button>
+        <button id="cookieReject" class="btn btn-secondary btn-sm">❌ Keeldun</button>
+      </div>
+    </div>
+  </div>
+
   <!-- ============ HEADER ============ -->
   <header class="header" id="top">
     <div class="header-inner">
@@ -90,6 +143,7 @@
     <!-- Animated glow ring -->
     <div class="hero-glow-ring"></div>
     <div class="hero-content">
+      <h1 class="sr-only">RS Auto 24 – Autohooldus ja Remont Irus</h1>
       <canvas id="heroLogoCanvas" class="hero-logo-canvas" aria-label="RS Auto 24"></canvas>
       <p class="hero-tagline">Autohooldus · Remont · Rehvivahetus</p>
       <p class="hero-subtitle">Usaldusväärne autotöökoda Irus, Tallinna lähedal. Teeme kõik tööd ausalt ja kiirelt – sõiduautodest kaubikuteni.</p>
@@ -354,10 +408,104 @@
         <a href="tel:+37256380701">📞 5638 0701</a>
         <a href="mailto:rsauto244@gmail.com">✉️ E-post</a>
         <a href="https://www.facebook.com/profile.php?id=100089255232353" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
+        <a href="privaatsuspoliitika.html">🔒 Privaatsuspoliitika</a>
+      </div>
+      <div class="footer-credit">
+        <span>Veebilahendus: <a href="https://navik.ee/veeb/" target="_blank" rel="noopener">Navik OÜ</a></span>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Cookie Consent Logic + MS Clarity (consent-gated) + GA4 Events -->
+  <script>
+    (function() {
+      var banner = document.getElementById('cookieBanner');
+      var acceptBtn = document.getElementById('cookieAccept');
+      var rejectBtn = document.getElementById('cookieReject');
+      var consent = localStorage.getItem('cookieConsent');
+
+      // Show banner if no choice made
+      if (!consent) {
+        banner.style.display = 'flex';
+      } else if (consent === 'accepted') {
+        activateTracking();
+      }
+
+      acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        banner.style.display = 'none';
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+        activateTracking();
+      });
+
+      rejectBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'rejected');
+        banner.style.display = 'none';
+      });
+
+      function activateTracking() {
+        // MS Clarity (consent-gated)
+        if (!window._clarityLoaded) {
+          window._clarityLoaded = true;
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/CLARITY_ID";
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window,document,"clarity","script");
+        }
+      }
+
+      // GA4 Lead Events — click-to-call tracking
+      document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              event_category: 'contact',
+              method: 'phone_call',
+              page_section: 'rs_auto_24'
+            });
+          }
+        });
+      });
+
+      // GA4 Lead Events — email click tracking
+      document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              event_category: 'contact',
+              method: 'email',
+              page_section: 'rs_auto_24'
+            });
+          }
+        });
+      });
+
+      // Scroll Depth Tracking
+      var scrollMilestones = [25, 50, 75, 100];
+      var firedMilestones = {};
+      window.addEventListener('scroll', function() {
+        var scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+        scrollMilestones.forEach(function(milestone) {
+          if (scrollPercent >= milestone && !firedMilestones[milestone]) {
+            firedMilestones[milestone] = true;
+            if (typeof gtag === 'function') {
+              gtag('event', 'scroll', {
+                event_category: 'engagement',
+                percent_scrolled: milestone
+              });
+            }
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

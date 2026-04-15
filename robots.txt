@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /RS Auto pildid/
+Disallow: /Kaart/
+
+Sitemap: https://rsauto24.ee/sitemap.xml

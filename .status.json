@@ -1,0 +1,70 @@
+{
+  "project": {
+    "name": "RS Auto 24",
+    "client": "RS Auto",
+    "slug": "RS Auto",
+    "created": "2026-03-24",
+    "type": "one-pager"
+  },
+  "contacts": [
+    {"name": "Kontaktisik", "phone": "+372 5638 0701", "email": null, "role": "omanik"}
+  ],
+  "urls": {
+    "live": "https://rsauto24.ee",
+    "draft": null,
+    "repo": "git@github.com:VeikoPeeterKargu/rs-auto-24.git"
+  },
+  "hosting": {
+    "platform": "määramata",
+    "project_name": null,
+    "deploy_method": "git-push"
+  },
+  "variants": [],
+  "versions": [
+    {
+      "version": "v1.0", "date": "2026-03-24", "file": "index.html", "variant_id": null,
+      "description": "Esialgne one-pager autohooldusteenustele. SEO + JSON-LD Schema.org AutoRepair. Kaart, hinnad, teenused.",
+      "deployed": true, "deploy_url": "https://rsauto24.ee"
+    },
+    {
+      "version": "v1.1", "date": "2026-03-25", "file": "index.html", "variant_id": null,
+      "description": "Kaardi uuendused — staatiline screenshot, Maardu pin-koordinaadid, Google Maps link.",
+      "deployed": true, "deploy_url": "https://rsauto24.ee"
+    },
+    {
+      "version": "v2.0", "date": "2026-04-01", "file": "index.html", "variant_id": null,
+      "description": "Inglise (en.html) ja vene (ru.html) keeleversioonid lisatud.",
+      "deployed": true, "deploy_url": "https://rsauto24.ee"
+    },
+    {
+      "version": "v2.1", "date": "2026-04-10", "file": "index.html", "variant_id": null,
+      "description": "Hero tekst uuendatud: 'veokid' → 'kaubikud'.",
+      "deployed": true, "deploy_url": "https://rsauto24.ee"
+    }
+  ],
+  "current_version": "v2.1",
+  "current_file": "index.html",
+  "wip": {
+    "has_wip": false, "task": null, "stopped_at": null,
+    "remaining": [], "blockers": [], "resume_instructions": null
+  },
+  "deploy_status": {
+    "last_deployed_version": "v2.1",
+    "last_deploy_date": "2026-04-10",
+    "local_ahead": false,
+    "needs_deploy": false,
+    "deployed_variants": []
+  },
+  "client_communication": {
+    "last_sent": null,
+    "last_sent_version": null,
+    "last_sent_url": "https://rsauto24.ee",
+    "variants_sent": [],
+    "waiting_for": null,
+    "client_feedback_received": null
+  },
+  "billing": {"quoted": null, "paid": null, "invoice_status": null},
+  "notes": "3 keelversiooni: et (index.html), en (en.html), ru (ru.html). Git repo GitHub'is (rs-auto-24). Branches: main, feat/add-languages, feat/content-kaubikud. Live domeen rsauto24.ee. Kaart staatiline screenshot (mitte iframe). JSON-LD AutoRepair schema olemas.",
+  "last_updated": "2026-04-14T09:15:00+03:00",
+  "last_updated_by": "agent"
+}
