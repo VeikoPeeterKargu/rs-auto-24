@@ -74,16 +74,29 @@ ul {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(17, 17, 17, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   height: var(--header-height);
   transition: all var(--transition);
 }
 
-.header.scrolled {
+/* Backdrop-filter on pseudo-element to avoid creating a stacking context
+   that traps the mobile .nav-links overlay */
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: -1;
+  transition: all var(--transition);
+}
+
+.header.scrolled::before {
   background: rgba(17, 17, 17, 0.95);
+}
+
+.header.scrolled {
   box-shadow: 0 4px 30px var(--shadow);
 }
 
@@ -830,12 +843,13 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(17, 17, 17, 0.98);
+    background: #111111;
     backdrop-filter: blur(20px);
     flex-direction: column;
     padding: 32px 24px;
     gap: 4px;
-    z-index: 999;
+    z-index: 10000;
+    overflow-y: auto;
   }
 
   .nav-links.open {
