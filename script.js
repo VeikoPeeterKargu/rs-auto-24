@@ -33,6 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Logo click → scroll to top ---
+  const logoLink = document.getElementById('headerLogoLink');
+  if (logoLink) {
+    logoLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // --- Scroll Animations ---
   const fadeElements = document.querySelectorAll('.fade-in');
 
